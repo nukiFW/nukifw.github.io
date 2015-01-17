@@ -25,8 +25,7 @@ pdf: $(PDFS)
 %.html: $(RAW)/%.md
 	@$(eval TITLE :=  $(shell sed -n '0,/^\%/p' $< | sed -re 's/^\% *//'))
 	@touch $(POST)/$@
-	@sed -re "s/\{\{TITLE\}\}/$(TITLE)/" $(SRC)/header.html > $(POST)/$@
-	@sed -re "s/\{\{URL\}\}/$(@)/" $(POST)/$@ > $(POST)/$@
+	@sed -re "s/\{\{URL\}\}/$(@)/" $(SRC)/header.html > $(POST)/$@
 	@echo "<h1>"$(TITLE)"</h1>" >> $(POST)/$@
 	@pandoc --webtex $< >> $(POST)/$@
 	@cat $(SRC)/footer.html >> $(POST)/$@
