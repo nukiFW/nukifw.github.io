@@ -1,0 +1,29 @@
+body{
+    font-family: 'Domine', serif;
+}
+#content {
+    max-width: 800px;
+    margin: auto;
+}
+
+#innercontent{
+    width: 100%; 
+    margin-bottom: 64px;
+}
+
+p {
+    text-align: justify;
+}
+
+#listarticle > li{
+    padding-bottom: 12px;
+}
+
+table{
+    margin: auto;
+}
+
+td{
+    padding: 4px; 
+    border: 1px solid silver;
+}

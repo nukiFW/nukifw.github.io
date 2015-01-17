@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Domine' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../default.css">
+    <script src="../highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+  <body>
+    <div id="content">
+      <a href="../index.html">Retourner a l'index</a>
+      <hr id="top" name="top"/>
+      <div id="innercontent">
+<h1></h1>
+<h1 id="une-page-statique">Une page statique</h1>
+<p>Ceci est un article d'exemple (et d'expérience). Ce système de publication repose principalement sur ces technologies :</p>
+<ul>
+<li><strong>Pandoc</strong> : Conversion de Markdown en HTML</li>
+<li><strong>Github pages</strong> : Hébergement et versionnement</li>
+<li><strong>Sed</strong> : Remplacement de contenu</li>
+<li><strong>Highlight.js</strong> : Colorisation syntaxique</li>
+<li><strong>DisqUs</strong> : Commentaires sur les articles</li>
+<li><strong>GNU Make</strong> : Automatisation des tâches</li>
+<li><strong>HTML</strong>, <strong>CSS</strong>, <strong>Javascript</strong> : Rendu en pages HTML</li>
+</ul>
+<h2 id="exemples-de-code">Exemples de code</h2>
+<pre class="sourceCode ocaml"><code class="sourceCode ocaml"><span class="kw">let</span> fact = 
+  <span class="kw">let</span> <span class="kw">rec</span> fact acc = <span class="kw">function</span> 
+  | n <span class="kw">when</span> n &lt; <span class="dv">2</span> -&gt; acc 
+  | n -&gt; fact (acc * n) (pred n)
+<span class="kw">in</span> fact <span class="dv">1</span></code></pre>
+<h2 id="tentative-de-mathématiques">Tentative de mathématiques</h2>
+<p><br /><img style="vertical-align:middle" src="http://chart.apis.google.com/chart?cht=tx&amp;chl=%0A%5Clambda%20x%20%5Coplus%209%0A" alt="
+\lambda x \oplus 9
+" title="
+\lambda x \oplus 9
+" /><br /></p>
+</div>
+<hr />
+<a href="#top">Remonter</a> | <a href="../index.html">Retourner à l'index</a>
+<hr />
+<h2>Commentaires</h2>
+<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'nukifw'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+    </body>
+</html>
