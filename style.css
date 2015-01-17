@@ -27,3 +27,18 @@ td{
     padding: 4px; 
     border: 1px solid silver;
 }
+
+#alert{
+		background-color:#960018;
+		position:fixed;
+		font-weight:bold;
+		top:0px;
+		left:0px;
+		width:100%;
+		padding:3px;
+		color: white;
+}
+
+#alert a{
+		color:white;
+}
